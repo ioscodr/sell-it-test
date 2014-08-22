@@ -1,0 +1,7 @@
+    bool isTwitterConnectedBool = [PFTwitterUtils isLinkedWithUser:[PFUser currentUser]];
+    if (isTwitterConnectedBool) {
+        [self unlinkUserWithTwitter];
+    }
+    else {
+        [self linkUserWithTwitter];
+    }
